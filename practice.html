@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p class="result"></p>
+    <script>
+      array = [1, 2, 3];
+      //I want to mutiply all these numbers by two
+
+      arrayFromZero = [];
+      // so I create a new array to store my new values
+
+      for (i = 0; i < array.length; i++) {
+        //and then I create a loop that will go trough each item in the array one by one
+        //if I want to loop trough the array I am going to have to loop trough one by one of the items starting from 0 to the end
+
+        // i am using < beacause I want it to run as I want it to keep running and loook trought the hole loop
+
+        const currentvalue = array[i];
+        //I save the current value of the array inside a variable
+
+        arrayFromZero.push(currentvalue * 2);
+        //then inside my empty array I push the current value * 2 or what ever I wanted to do to it
+
+        console.log(arrayFromZero);
+      }
+    </script>
+  </body>
+</html>
