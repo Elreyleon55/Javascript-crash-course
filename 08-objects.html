@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      // const products = {
+      //   name: "socks",
+      //   price: 1090,
+      // };
+
+      // console.log(products);
+      // console.log((products.name = "cotton socks"));
+      // console.log(products.name);
+      // products.newvalue = "cats like me";
+      // console.log(products);
+      // delete products.newvalue;
+      // console.log(products);
+
+      // const products = {
+      //   name: "shirt",
+      //   [`delivery-time`]: "nine thurty",
+      //   rating: {
+      //     starts: 4.5,
+      //     count: 85,
+      //   },
+      //   fun: function cats2() {
+      //     console.log("a function inside a function");
+      //   },
+      // };
+
+      // console.log(products["name"]);
+      // console.log(products["delivery-time"]);
+      // console.log(products["rating"]["starts"]);
+      // console.log(products.fun);
+      // products.fun();
+      // console.log(JSON.stringify(products));
+      // const jsonString = JSON.stringify(products);
+      // console.log(JSON.parse(jsonString));
+
+      // localStorage.setItem("message, cats");
+
+      console.log("hello".length);
+      console.log("hello".toUpperCase());
+
+      const object1 = {
+        name: "ezequiel",
+      };
+
+      console.log(object1);
+
+      const object2 = object1;
+      console.log(object2);
+
+      object1.name = "elizabeth";
+
+      console.log(object2, "hello");
+
+      // SO OBJECTS DO NOT ACT LIKE VARIALES THERE ARE ACTUALLY JUST RENFRENCES THAT IS WHY YOU CAN CHNAGE THERE REFRENCE WHEN USING CONST AND EWHY YOU CAN CHNGE THERE INFOMRATION.
+
+      const object3 = {
+        message: "elizabeth",
+      };
+
+      console.log(object3);
+      console.log(object1 === object3);
+
+      const object4 = {
+        message: "elizabeth",
+        price: 886,
+      };
+
+      // const message = object4.message;
+
+      const { message, price } = object4;
+      console.log(object4);
+
+      const object5 = {
+        message: message,
+        // method: function firstFunction() {
+        //   console.log("method");
+        // }
+        method: () => {
+          console.log("this is java");
+        },
+      };
+
+      console.log(object5);
+
+      console.log(object5);
+
+      object5.method();
+    </script>
+  </body>
+</html>
