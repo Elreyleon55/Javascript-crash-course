@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Siccors</title>
+    <script defer src="./scripts/rock-paper-scissors.js"></script>
+  </head>
+  <body>
+    <p>Rock Paper Sciccors</p>
+
+    <div class="button-container">
+      <button
+        class="game-buttons"
+        onclick="
+        playGame('rock');
+      "
+      >
+        Rock
+      </button>
+
+      <button
+        class="game-buttons"
+        onclick="
+        playGame('paper');
+      "
+      >
+        Paper
+      </button>
+
+      <button
+        class="game-buttons"
+        onclick="
+        playGame('scissors')
+      "
+      >
+        Scissors
+      </button>
+    </div>
+
+    <div class="paragraphs-result">
+      <p class="result-of-answers"></p>
+      <p class="result-of-game"></p>
+      <p class="result-of-score"></p>
+    </div>
+    <button
+      onclick="
+    resetButton()
+    "
+    >
+      reset score
+    </button>
+    <button
+      class="auto-play-button"
+      onclick="
+      autoPlay();
+    "
+    >
+      AutoPlay
+    </button>
+
+    <div class="playerComputerScore">
+      <p></p>
+    </div>
+  </body>
+</html>

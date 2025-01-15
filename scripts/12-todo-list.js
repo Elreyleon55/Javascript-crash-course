@@ -55,21 +55,22 @@ buttonActivation.addEventListener("click", () => {
 
 function renderTodoList() {
   let todoList = "";
+  console.log(TodolistSecond);
 
-  for (let i = 0; i < TodolistSecond.length; i++) {
-    let name = TodolistSecond[i].name;
-    let dueDate = TodolistSecond[i].date;
+  TodolistSecond.forEach((todoObject, index) => {
+    let name = todoObject.name;
+    let dueDate = todoObject.date;
 
     const html = `
     <p>
     ${name} ${dueDate}
     <button onclick="
-      TodolistSecond.splice(${i}, 1);
+      TodolistSecond.splice(${index}, 1);
       renderTodoList();
     ">Delete</button>
     </p>`;
     todoList += html;
-  }
+  });
 
   innerParagraph.innerHTML = todoList;
   console.log(todoList);

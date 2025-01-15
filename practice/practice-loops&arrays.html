@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="scripts/todo-list.js"></script>
+    <title>Practice Arrays and Loops</title>
+  </head>
+  <body></body>
+
+  <script>
+    //Question One:
+    // numbs = [10, 20, 30];
+    // numbs[2] = 99;
+    // console.log(numbs);
+
+    //Question Two:
+    // myArray = [1, 4, 5, 6, "Good Job"];
+    // function getLastValue(array) {
+    //   let lastDigit = array[array.length - 1];
+    //   console.log(lastDigit);
+    // }
+    // getLastValue(myArray);
+
+    // Question Three:
+    // myArray = [1, 3, 4, "lets-swap"];
+    // function arraySwap(array) {
+    //   let firstIndex = array[0];
+    //   let lastIndex = array[array.length - 1];
+
+    //   array[array.length - 1] = firstIndex;
+    //   array[0] = lastIndex;
+    //   console.log(array);
+    // }
+
+    // arraySwap(myArray);
+
+    //Question four:
+    // for (let i = 0; i <= 10; i += 2) {
+    //   console.log(i);
+    // }
+
+    //Question five:
+    // for (let i = 5; i >= 0; i -= 1) {
+    //   console.log(i);
+    // }
+
+    //Question Six:
+    // i = 0;
+    // while (i < 10) {
+    //   i += 2;
+    //   console.log(i);
+    // }
+
+    // while (i > 0) {
+    //   console.log(i);
+    //   i--;
+    // }
+
+    //Question seven:
+
+    // myOriginalArray = [1, 2, 3, 4];
+
+    // function doubleArrayformula(array) {
+    //   doubledArray = [];
+
+    //   for (let i = 0; i < array.length; i++) {
+    //     doubledArray.push((array[i] += 1));
+    //   }
+    //   console.log(doubledArray);
+    // }
+
+    // doubleArrayformula(myOriginalArray);
+
+    //Question eight:
+
+    //Question eleven:
+
+    // const myArray = [1, 2, 3, 4, 5];
+    // let myNum = 4;
+
+    // function numIncrease(array, num) {
+    //   const updatedArray = [];
+    //   for (let i = 0; i < array.length; i++) {
+    //     updatedArray.push(array[i] + num);
+    //   }
+    //   console.log(updatedArray);
+    // }
+
+    // numIncrease(myArray, myNum);
+
+    //Question Eleven j:
+    // const arrayOne = [1, 2, 3, 4];
+    // const arrayTwo = [5, 6, 7, 8];
+
+    // function addingArrays(aone, atwo) {
+    //   const newSetArray = [];
+    //   for (let i = 0; i < aone.length; i++) {
+    //     newSetArray.push(aone[i] + atwo[i]);
+    //   }
+    //   console.log(newSetArray);
+    // }
+
+    // addingArrays(arrayOne, arrayTwo);
+
+    //Question Eleven k:
+    // const arrayNumbers = [1, -6, 3, 4, 5, -7, -77];
+
+    //how can i determine if a number is negative or positive
+    // 0> or 0<
+    //I need to loop trough my set of numbers
+
+    // function counterPositives(arrayNumbers) {
+    //   let countOfPositiveNumbers = 0;
+    //   let countOfNegativeNumbers = 0;
+    //   for (let i = 0; i < arrayNumbers.length; i++) {
+    //     if (arrayNumbers[i] > 0) {
+    //       countOfPositiveNumbers++;
+    //     } else if (arrayNumbers[i] < 0) {
+    //       countOfNegativeNumbers++;
+    //     }
+    //   }
+    //   console.log(countOfNegativeNumbers);
+    //   console.log(countOfPositiveNumbers);
+    // }
+
+    // counterPositives(arrayNumbers);
+
+    //CHANLLENGE QUESTIONS:
+    //1.
+
+    // const myArray = [1, -4, 9, 7, -3, -5];
+
+    // function minMax(a) {
+    //   const myObjectContent = {
+    //     min: null,
+    //     max: null,
+    //   };
+
+    //   for (let i = 0; i < a.length; i++) {
+    //     let value = a[i];
+
+    //     if (myObjectContent.min === null || value < myObjectContent.min) {
+    //       myObjectContent.min = value;
+    //     }
+    //     if (myObjectContent.max === null || value > myObjectContent.max) {
+    //       myObjectContent.max = value;
+    //     }
+    //   }
+    //   console.log(myObjectContent.max);
+    //   console.log(myObjectContent.min);
+    // }
+
+    // minMax(myArray);
+
+    //.2
+    // const myWords = ["apple", "orange", "grape", "pinaple"];
+
+    // function countWords(w) {
+    //   const wordCount = {};
+
+    //   for (let i = 0; i < w.length; i++) {
+    //     let currentWord = w[i];
+
+    //     if (!wordCount[currentWord]) {
+    //       wordCount[currentWord] = 1;
+    //     } else {
+    //       wordCount[currentWord]++;
+    //     }
+    //   }
+    //   console.log(wordCount);
+    // }
+
+    // countWords(myWords);
+  </script>
+</html>

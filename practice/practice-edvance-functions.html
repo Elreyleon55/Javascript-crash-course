@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="scripts/todo-list.js"></script>
+    <title>Practice Advanced Functions</title>
+  </head>
+  <body>
+    <button
+      id="button-change"
+      onclick="
+      changebutton();
+      "
+    >
+      Start
+    </button>
+    <button
+      id="cart"
+      onclick="
+      addedToCart();
+    "
+    >
+      Add To Cart
+    </button>
+    <div id="input-cart"></div>
+    <section>
+      <button
+        onclick="
+        message++
+        "
+      >
+        Increase
+      </button>
+      <button
+        onclick="
+         message--;
+      "
+      >
+        Decrease
+      </button>
+    </section>
+  </body>
+
+  <script>
+    //QUESTION 12.a
+    let countVariable = function () {
+      console.log("2+3");
+    };
+
+    countVariable();
+    countVariable();
+
+    //QUESTION 12.b
+
+    function runTwice(param) {
+      param();
+      param();
+    }
+
+    runTwice(function () {
+      console.log("12.b");
+    });
+
+    //QUESTION 12.c 12.d
+
+    function changebutton() {
+      const button = document.getElementById("button-change");
+      button.innerHTML = "loading";
+      setTimeout(function () {
+        button.innerHTML = "finshed";
+      }, 2000);
+    }
+
+    //QUESTION 12e.
+    let myTimeOut;
+
+    function addedToCart() {
+      const outPutHtml = document.getElementById("input-cart");
+      outPutHtml.innerHTML = "<p>Added</p>";
+
+      setTimeout(myTimeOut);
+
+      myTimeOut = setTimeout(function () {
+        outPutHtml.innerHTML = "";
+      }, 4000);
+    }
+
+    //QUESTION 12.g
+    // setInterval(function () {
+    //   if (document.title === "App") {
+    //     document.title = "(2) new messages";
+    //   } else {
+    //     document.title = "App";
+    //   }
+    // }, 1000);
+
+    //QUESTION 12.h
+
+    // let message = 0;
+
+    // setInterval(function () {
+    //   if (message < 0) {
+    //     document.title = `
+    //         App
+    //       `;
+    //   } else {
+    //     if (document.title === "App") {
+    //       document.title = `
+    //           New messages (${message})
+    //         `;
+    //     } else {
+    //       document.title = "App";
+    //     }
+    //   }
+    // }, 2000);
+
+    //   const object2 = {
+    //     method: () => {
+
+    //     }
+    //   }
+  </script>
+</html>

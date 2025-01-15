@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="scripts/todo-list.js"></script>
+    <title>Practice Arrays and Loops</title>
+  </head>
+  <body></body>
+
+  <script>
+    //question 11.o
+    const wordArray = [
+      "same",
+      "love",
+      "search",
+      "care",
+      "take",
+      "youcan",
+      "search",
+    ];
+    let index = -1;
+
+    for (let i = 0; i <= wordArray.length; i++) {
+      if (wordArray[i] === "search") {
+        console.log(wordArray[i]);
+        index = i;
+        break;
+      }
+    }
+    console.log(index);
+
+    const secondWordsArray = ["not", "found"];
+    //question 11.p
+    index = -1;
+
+    for (let i = 0; i <= secondWordsArray; i++) {
+      if (secondWordsArray[i] === "search") {
+        index = i;
+      }
+    }
+    console.log(index);
+
+    //question 11.q
+    index = -1;
+
+    function findIndex(array, word) {
+      for (let i = 0; i <= array.length; i++) {
+        if (array[i] === word) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    console.log(findIndex(["cats", "dogs", "elephants", "rats"], "elephants"));
+    console.log(findIndex(["cats", "dogs", "rats"], "elephants"));
+
+    //QUESTION 11.r
+
+    let wordsWithoutEggs = [];
+    let eggsRemoved = 0;
+    function removeEggFood(array2) {
+      let newArray = array2.slice();
+      newArray.reverse();
+      for (let i = 0; i <= newArray.length; i++) {
+        if (newArray[i] === "eggs" && eggsRemoved < 2) {
+          eggsRemoved++;
+          continue;
+          //this continue acts as a skip of the word eggs and goes to the next alteration of the array
+        }
+
+        wordsWithoutEggs.push(newArray[i]);
+      }
+    }
+
+    console.log(
+      removeEggFood(["apples", "eggs", "chicken", "oranges", "eggs", "eggs"])
+    );
+    // console.log(wordsWithoutEggs);
+
+    //QUESTION 11.v
+
+    //fizz buzz fizzBuzz Aquation
+
+    for (let i = 1; i <= 20; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+      } else if (i % 3 === 0) {
+        console.log("Fizz");
+      } else if (5 === 0) {
+        console.log("Buzz");
+      }
+    }
+
+    //Question 11w.
+
+    function findIndex2(array, word) {
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] === word) {
+          return i;
+        }
+      }
+      return -1;
+    }
+  </script>
+</html>
