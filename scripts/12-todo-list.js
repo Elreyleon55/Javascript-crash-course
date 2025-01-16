@@ -64,14 +64,20 @@ function renderTodoList() {
     const html = `
     <p>
     ${name} ${dueDate}
-    <button onclick="
-      TodolistSecond.splice(${index}, 1);
-      renderTodoList();
-    ">Delete</button>
+    <button class="js-delete-button">Delete</button>
     </p>`;
     todoList += html;
   });
-
   innerParagraph.innerHTML = todoList;
+
+  document
+    .querySelectorAll(".js-delete-button")
+    .forEach((deleteButton, index) => {
+      deleteButton.addEventListener("click", () => {
+        TodolistSecond.splice(index, 1);
+        renderTodoList();
+      });
+    });
+
   console.log(todoList);
 }

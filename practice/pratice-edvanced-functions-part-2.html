@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="scripts/todo-list.js"></script>
+    <title>Practice Advanced Functions Part 2</title>
+  </head>
+  <body>
+    <button
+      id="button-change"
+      onclick="
+      changebutton();
+      "
+    >
+      Start
+    </button>
+    <button
+      id="cart"
+      onclick="
+      addedToCart();
+    "
+    >
+      Add To Cart
+    </button>
+    <div id="input-cart"></div>
+    <section>
+      <button
+        onclick="
+        message++
+        "
+      >
+        Increase
+      </button>
+      <button
+        onclick="
+         message--;
+      "
+      >
+        Decrease
+      </button>
+    </section>
+  </body>
+
+  <script>
+    //QUESTION 12.j
+
+    // const errowFunction = (a, b) => {
+    //   return a * b;
+    // };
+
+    // errowFunction(1, 2);
+
+    // console.log(errowFunction(1, 2));
+
+    // //Question 12.k
+    // const errowFunction2 = (b) => b;
+
+    // console.log(errowFunction2(3));
+
+    //Question 12.I
+    // function countPositivesNumbers(numbs) {
+    //   numbersGreaterThenZero = 0;
+    //   numbs.forEach((value, index) => {
+    //     if (value > 0) {
+    //       numbersGreaterThenZero++;
+    //     }
+    //   });
+    //   return numbersGreaterThenZero;
+    // }
+
+    // console.log(countPositivesNumbers([1, 3, -5, -7, 3, 4]));
+
+    //Question 12.m
+
+    function addNumbers(array, num) {
+      return array.map((value) => value + num);
+    }
+
+    console.log(addNumbers([1, 4, 5, 6], 2));
+
+    function removeEgg(array) {
+      let eggCounter = 0;
+      return array.filter((value) => {
+        if (value === "eggs" && eggCounter < 2) {
+          eggCounter++;
+          return false;
+        }
+
+        return true;
+      });
+    }
+    console.log(
+      removeEgg(["cat", "help", "eggs", "lol", "eggs", "more", "eggs"])
+    );
+  </script>
+</html>

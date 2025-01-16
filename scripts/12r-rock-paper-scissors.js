@@ -107,6 +107,10 @@ let isAutoPLaying = false;
 //set to false from the beggning
 let intervalId;
 
+// document.querySelector(".auto-play-button").addEventListener("click", () => {
+//   autoPlay();
+// });
+
 function autoPlay() {
   //this checks if isAutoPLaying is false
   //set interval wil keep running without need of me of clicking anything here is the trick

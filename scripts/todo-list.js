@@ -63,7 +63,7 @@ function renderTodoList() {
     const html = `
     <p>
     ${name} ${dueDate}
-    <button onclick="
+    <button class="js-delete-button" onclick="
       TodolistSecond.splice(${i}, 1);
       renderTodoList();
     ">Delete</button>
@@ -72,5 +72,6 @@ function renderTodoList() {
   }
 
   innerParagraph.innerHTML = todoList;
+
   console.log(todoList);
 }
